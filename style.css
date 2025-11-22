@@ -1,0 +1,180 @@
+body{
+    background-image: url("https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1954");
+    background-size: cover;
+    height: 100vh;
+    
+}
+header{
+            background: teal;
+            color: white;
+            padding: 10px;     
+        }
+        nav{
+            position: fixed;
+            top: 0%;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            z-index: 1000;
+            background: teal;
+        }
+        nav ul{
+            list-style: none;
+           
+        }
+        .nav-links{
+            color: white;
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        .grid_container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px; /* space between boxes */
+            /* background-color: lightgray; */
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .grid_container div{
+            background-color: white;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+        /* blog section */
+        .blog-section {
+  padding: 60px 0;
+  /* background-color: #f8f9fa; */
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+ 
+
+/* contact form */
+ .contact{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: 2px solid blue ;
+            height: 500px;
+            width: 50%;
+            background-color:  #f5f6fa;;
+            margin: auto;
+            margin-top: 70px;
+            padding: 40px;
+            box-shadow: 200px;
+            box-shadow: 5px 7px 9px grey;
+            box-sizing: border-box;
+        }
+        label{
+            /* display: block; */
+            margin-top: 8px;
+            font-weight: bold;
+
+        }
+        input, textarea{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid blue;
+            border-radius: 8px;
+            background-color: #fff;
+            font-size: 16px;
+            transition: 0.3s; 
+
+            
+        }
+
+        input:focus,  textarea:focus {
+      border-color: #28a745;      /* green border on focus */
+      box-shadow: 0 0 6px rgba(40, 167, 69, 0.5); /* glow effect */
+      outline: none;
+    }
+    .button{
+        width: 150px;
+        height: 40px;
+        border-radius: 4px;
+        margin-left: 30%;
+        font-weight: bold;
+        /* background: linear-gradient(to right, hsl(247, 91%, 40%), hsl(116, 66%, 57%)); */
+        /* align-items: center; */
+    }
+    .button:hover{
+        background-color: blue;
+    }
+     .spn{
+            float: right;
+        }
+
+/* Responsive for mobiles */
+    @media (max-width: 768px) {
+      body{
+          background-size: cover;
+  background-position: center;
+
+      }
+    
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #444;
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    display: none;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* .nav-links.show {
+    display: block;
+  } */
+
+  .menu-icon {
+    display: block;
+  }
+
+
+  /* #about div img{
+    max-width: 100%;
+    height: auto;
+    padding-right: 20px;
+  } */
+
+  /* .project{
+    display: block;
+    background-color: aqua;
+  } */
+
+}
